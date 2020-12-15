@@ -15,7 +15,11 @@
     </head>
     <body>
         <form action="https://google.com/search">
-            <input style="margin:auto" id="inputBox" type="text" name="q">
+            <input id="inputBox" type="text" name="q">
+            <div class="input-group input-group-lg">
+                <span class="input-group-text" id="inputGroup-sizing-lg">Large</span>
+                    <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+            </div>
             <div>
                 <input id"searchButton" type="submit" value="Google Search">
                 <input id"luckyButton" type="submit" value="I'm Feeling Lucky">
