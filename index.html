@@ -4,19 +4,28 @@
         <title>Search</title>
 
         <style>
-            .inputBox, .searchButton, .luckyButton {
+
+            .everything {
                 margin:auto;
+                display: flex;
+            }
+
+            .inputBox, .searchButton, .luckyButton {
+                justify-content: center;
+                align-items: center;
             }
 
         </style>
     </head>
     <body>
-        <form action="https://google.com/search">
-            <input id="inputBox" type="text" name="q">
-            <div>
-                <input id"searchButton" type="submit" value="Google Search">
-                <input id"luckyButton" type="submit" value="I'm Feeling Lucky">
-            </div>
-        </form>
+        <div id="everything">
+            <form action="https://google.com/search">
+                <input id="inputBox" type="text" name="q">
+                <div>
+                    <input id"searchButton" type="submit" value="Google Search">
+                    <input id"luckyButton" type="submit" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </div>
     </body>
 </html>
