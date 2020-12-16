@@ -3,32 +3,104 @@
     <head>
         <style>
 
+            #links {
+                text-align: right;
+                margin-top: 20px;
+                margin-right: 20px;
+            }
 
-        input[type=text] {
-            width: 50%;
-            box-sizing: border-box;
-            border: 2px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
+            a {
+                display: inline-block;
+                font-family: sans-serif;
+                font-size: 13px;
+                padding:8px;
+                color: #3c4043;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            img {
+                display: block;
+                margin-top: 150px;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 33%;
+            }
+
+            #inputBox {
+            display: block;
+            width: 360px;
+            border: 1px solid #dfe1ef;
+            border-radius: 24px;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            color: #222;
             background-color: white;
-            background-image: url('searchicon.png');
-            background-position: 10px 10px;
-            background-repeat: no-repeat;
             padding: 12px 20px 12px 40px;
+            margin: 30px auto 25px auto;
+            vertical-align: middle;
         }
 
+        #searchButton, #luckyButton {
+            display: inline-block;
+            padding: 0px 16px;
+            border: 1px solid #f8f9fa;
+            margin: 11px 4px;
+            border-radius: 4px;
+            color: #3c4043;
+            background-color: #f8F9fa;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            text-align: center;
+            min-width: 54px;
+            height: 36px;
+            line-height: 27px;
+        }
+
+        #buttons {
+            text-align: center;
+        }
+
+        #inputBox:hover {
+            border: 2px solid #ccc;
+        }
+
+        #searchButton:hover, #luckyButton:hover {
+            border: 1px solid #ccc;
+        }
+
+        #inputBox:focus {
+            outline: 0;
+        }
+
+        #searchButton:focus, #luckyButton:focus {
+            border: thin solid blue;
+        }
         </style>
+
         <title>Search</title>
     </head>
+
     <body>
-    <div>
-        <form action="https://google.com/search">
-            <input id="inputBox" type="text" name="q">
-            <div>
-                <input id"searchButton" type="submit" value="Google Search">
-                <input id"luckyButton" type="submit" value="I'm Feeling Lucky">
+        <div>
+            <div id="links">
+                <a href="images.html">Images</a>
+                <a href="advanced.html">Advanced</a>
             </div>
-        </form>
-    </div>
+            <div>
+                <img src="google_holiday_logo.png" alt="Google logo">
+            </div>
+            <form action="https://google.com/search">
+                <input id="inputBox" type="text" name="q">
+                <div id="buttons">
+                    <input id="searchButton" type="submit" value="Google Search">
+                    <input id="luckyButton" type="submit" value="I'm Feeling Lucky">
+                </div>
+            </form>
+        </div>
     </body>
+
 </html>
