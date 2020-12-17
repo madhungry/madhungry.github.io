@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+
+            img {
+                max-height: 35px;
+                margin-left: 10px;
+                margin-top: 10px;
+                float: left;
+            }
+
+            #links {
+                margin-top: 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+                text-align: right;
+            }
+
+            a {
+                display: inline-block;
+                font-family: sans-serif;
+                font-size: 13px;
+                padding:8px;
+                color: #3c4043;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            #advancedLabel {
+                color: #d93025;
+                margin-left:33px;
+                margin-right:33px;
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+                border-bottom: 1px solid #dfe1ef;
+                padding: 25px 0;
+            }
+
+            table {
+                margin-top: 30px;
+                margin-left: 33px;
+                margin-right: 33px;
+                font-family: arial, sans-serif;
+            }
+
+            .column1, .column2 {
+                padding-bottom: 25px;
+            }
+
+            td {
+                font-size: 13px;
+                color: #333;
+            }
+
+            #columnHeading {
+                font-size: 16px;
+            }
+
+            input {
+                font-size: 13px;
+                padding: 1px 8px;
+                height: 25px;
+                border: 1px solid #dfe1ef;
+                width:100%;
+            }
+
+            input:focus {
+                border: 1px thin blue;
+            }
+
+            .column1 {
+                min-width: 163px;
+            }
+
+            .column2 {
+                width:75%
+            }
+
+            #advancedButton {
+                width:auto;
+                border-radius: 2px;
+                font-size: 11px;
+                font-weight: bold;
+                text-align: center;
+                border: 1px solid #3079ed;
+                color: #fff;
+                background-color: #4d90fe;
+                height: 30px;
+                min-width: 120px;
+            }
+
+            #button {
+                text-align: right;
+            }
+
+
+        </style>
+
+        <title>Advanced</title>
+    </head>
+
+    <body>
+        <div>
+            <div id="links">
+                <img src="./google_logo.png">
+                <a href="index.html">Search</a>
+                <a href="images.html">Images</a>
+            </div>
+            <div id="advancedLabel">
+                Advanced Search
+            </div>
+
+            <form action="https://www.google.com/search">
+                <table style="width:80%">
+                    <thead>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="column1" id="columnHeading">Find pages with...</td>
+                            <td class="column2">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">all these words:</td>
+                            <td class="column2">
+                                <input type="text" name="as_q">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">this exact word or phrase:</td>
+                            <td class="column2">
+                                <input type="text" name="as_epq">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">any of these words:</td>
+                            <td class="column2">
+                                <input type="text" name="as_oq">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="column1">none of these words:</td>
+                            <td class="column2">
+                                <input type="text" name="as_eq">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <div id="button">
+                                    <input id="advancedButton" type="submit" value="Advanced Search">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+            </form>
+        </div>
+    </body>
+
+</html>
